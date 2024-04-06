@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333; /* Darker text */
+}
+
+p {
+    font-size: 1.2em;
+    color: #666; /* Lighter text */
+}
+
+.donation-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Icons wrap to next line if needed */
+    margin: 0 auto; /* Center icons horizontally */
+}
+
+.donation-icon {
+    text-decoration: none; /* Remove underline from links */
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.2s ease-in-out; /* Smooth hover effect */
+    animation: pop-up 0.5s ease-in-out forwards; /* New animation */
+}
+
+.donation-icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.donation-icon:hover {
+    background-color: #e0e8ff; /* Lighter background on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.donation-icon span {
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* New animation definition */
+@keyframes pop-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
